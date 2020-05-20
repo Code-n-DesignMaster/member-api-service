@@ -1,0 +1,54 @@
+{
+  "_id": "a3e417cb-ee20-4d3e-8eea-7c45ffdd3eec",
+  "updatedAt": "2018-05-31T09:57:16.497Z",
+  "createdAt": "2018-05-31T09:57:16.175Z",
+  "userId": "1001610",
+  "name": "Marketing v3",
+  "template": {
+    "title": "Marketing v3",
+    "description": "",
+    "src": "https://image-api-service.siteplus.wtf/projects/a3e417cb-ee20-4d3e-8eea-7c45ffdd3eec"
+  },
+  "resellerId": "1",
+  "migrated": false,
+  "screenshotsDone": true,
+  "updatesCounter": 0,
+  "hasChangesAt": "2018-08-23T07:17:08.783Z",
+  "deletedAt": null,
+  "deleted": false,
+  "firstPublishedAt": "2018-05-31T09:57:34.201Z",
+  "publishedAt": "2018-08-23T07:17:13.970Z",
+  "published": true,
+  "hasChanges": true,
+  "num": 1,
+  "domains": [
+    {
+      "name": "nodejs-test-68433",
+      "project": "a3e417cb-ee20-4d3e-8eea-7c45ffdd3eec",
+      "userId": "1001610",
+      "verificationAttempt": 0,
+      "isVerified": false,
+      "isPrimary": true,
+      "ssl": true,
+      "type": "free",
+      "domainId": "1d902232-9acf-473f-9e23-2138b7630312",
+      "link": "nodejs-test-68433.siteplus.wtf"
+    }
+  ],
+  "projectTemplate": "7773658b-29c7-4534-8a51-af4b352ffcbe",
+  "__v": 0,
+  "eCommerce": {
+    "providerType": "ecwid",
+    "providerStoreId": 14594092,
+    "status": "ACTIVE",
+    "subscription": "SITEPLUS_BASIC",
+    "storeUrl": "store",
+    "populatedWithDefaultProducts": true
+  },
+  "ssl": true,
+  "link": "nodejs-test-68433.siteplus.wtf",
+  "screenshotUrlTemplate": "https://image-api-service.siteplus.wtf/projects/a3e417cb-ee20-4d3e-8eea-7c45ffdd3eec",
+  "outOfPlan": false,
+  "canPublish": true,
+  "projectBgColor": "#29404c"
+}

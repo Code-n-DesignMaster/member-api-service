@@ -1,0 +1,30 @@
+{
+  "accessToken": "1d626bdf-ea76-40cc-aa00-d92bd0fb56ad",
+  "user": {
+    "id": 1001610,
+    "email": "nodejs.test@siteplus.com",
+    "fullName": "Nodejs Test",
+    "firstName": "Nodejs",
+    "lastName": "Test",
+    "status": "active",
+    "timezone": 90,
+    "language": 0,
+    "resellerId": 1,
+    "currencyId": 3,
+    "emailContentType": "html",
+    "accountUsage": "0",
+    "verified": false,
+    "shard": {
+      "shardId": 1,
+      "uid": "c0240d43-b9f9-4ecd-8c4b-bb7542268017",
+      "description": "EU"
+    },
+    "reseller": {
+      "resellerId": 1,
+      "domain": "siteplus.wtf",
+      "dynamicSubdomain": "siteplus.wtf",
+      "name": "Siteplus"
+    },
+    "type": "test"
+  }
+}

@@ -1,0 +1,69 @@
+#!/usr/bin/env node
+
+process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+
+const http = require('http');
+const terminus = require('@godaddy/terminus');
+
+const app = require('../app');
+const config = require('../config');
+const logger = require('../helpers/logger');
+const readinessProbe = require('@sp/nodejs-utils').livenessReadinessProbe({logger});
+
+const port = config.port;
+
+app.set('port', port);
+const server = http.createServer(app);
+
+// Liveness-Readiness --------------------------
+const readinessDependencies = [
+  ['MONGODB', require('../database'), 'isConnected', 'disconnect'],
+];
+
+readinessProbe.setDependencies(readinessDependencies);
+
+const terminusOptions = {
+  healthChecks: {
+  '/healthz/liveness': readinessProbe.checkLiveness,   //Liveness
+  '/healthz/readiness': readinessProbe.checkReadiness  //Readiness -> a promise returning function indicating service health
+},
+  //timeout: 1000,                            // [optional = 5000] number of milliseconds before forcefull exiting
+  //signal,                                   // [optional = 'SIGTERM'] what signal to listen for relative to shutdown
+  onSignal: readinessProbe.onSignalToCleanup, // [optional] cleanup function, returning a promise (used to be onSigterm)
+  onShutdown: readinessProbe.onShutdown,      // [optional] called right before exiting
+  logger: logger.error,                       // [optional] logger function to be called with errors
+};
+
+terminus(server, terminusOptions);
+// --------------------------
+
+server.listen(port);
+server.on('error', onError);
+server.on('listening', onListening);
+
+function onError(error) {
+  if (error.syscall !== 'listen') {
+    throw error;
+  }
+  const bind = typeof port === 'string' ? 'Pipe ' + port : 'Port ' + port;
+
+  // handle specific listen errors with friendly messages
+  switch (error.code) {
+    case 'EACCES':
+      console.error(bind + ' requires elevated privileges');
+      process.exit(1);
+      break;
+    case 'EADDRINUSE':
+      console.error(bind + ' is already in use');
+      process.exit(1);
+      break;
+    default:
+      throw error;
+  }
+}
+
+function onListening() {
+  console.info(`Server started on port ${port} (${config.env})`);
+}
+
+module.exports = server;

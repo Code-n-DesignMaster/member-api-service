@@ -1,0 +1,14 @@
+{
+  "used": {
+    "sites": 1,
+    "drafts": 2,
+    "pages": 10,
+    "storage": 0
+  },
+  "available": {
+    "sites": 2,
+    "drafts": 1500,
+    "pages": 20,
+    "storage": 1073741824
+  }
+}

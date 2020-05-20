@@ -1,0 +1,327 @@
+{
+  "id": 1001610,
+  "email": "nodejs.test@siteplus.com",
+  "fullName": "Nodejs Test",
+  "firstName": "Nodejs",
+  "lastName": "Test",
+  "status": "active",
+  "timezone": 90,
+  "language": 0,
+  "resellerId": 1,
+  "currencyId": 3,
+  "emailContentType": 0,
+  "accountUsage": "0",
+  "shard": {
+    "shardId": 1,
+    "uid": "c0240d43-b9f9-4ecd-8c4b-bb7542268017",
+    "description": "EU"
+  },
+  "reseller": {
+    "resellerId": 1,
+    "domain": "siteplus.wtf",
+    "dynamicSubdomain": "siteplus.wtf",
+    "name": "Siteplus"
+  },
+  "type": "test",
+  "contact": {
+    "address": "Martin Pl 1",
+    "city": "Sydney",
+    "zip": "2000",
+    "country": "Australia",
+    "state": "NSW",
+    "phone": "61 282 231 111"
+  },
+  "notifications": {
+    "service": false,
+    "promotions": false,
+    "news": false
+  },
+  "subscriptions": [
+    {
+      "productId": 1636,
+      "memberId": 1001610,
+      "planId": 13,
+      "productName": "Siteplus Personal Ecommerce",
+      "status": "active",
+      "type": "paid",
+      "dateAdded": "2018-05-31 09:56:51",
+      "expiredDate": "2019-08-03 07:28:13",
+      "period": {
+        "periodId": 12,
+        "technicalName": "Annual",
+        "marketingName": "Annual",
+        "isTrial": false
+      },
+      "plan": {
+        "productTemplateId": 1,
+        "technicalName": "Siteplus Personal Ecommerce",
+        "marketingName": "Siteplus Personal Ecommerce",
+        "description": "Siteplus Personal Ecommerce",
+        "isSpecial": false
+      },
+      "productTemplate": {
+        "productTemplateId": 1,
+        "technicalName": "sitebuilder",
+        "marketingName": "sitebuilder"
+      },
+      "features": [
+        {
+          "featureId": 1,
+          "technicalName": "sites",
+          "marketingName": "Sites",
+          "featureValue": "1"
+        },
+        {
+          "featureId": 2,
+          "technicalName": "projects",
+          "marketingName": "Projects",
+          "featureValue": "1500"
+        },
+        {
+          "featureId": 3,
+          "technicalName": "storage",
+          "marketingName": "Storage",
+          "featureValue": "1073741824"
+        },
+        {
+          "featureId": 4,
+          "technicalName": "pages",
+          "marketingName": "Pages per project",
+          "featureValue": "20"
+        },
+        {
+          "featureId": 5,
+          "technicalName": "freeDomains",
+          "marketingName": "Free domains",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 6,
+          "technicalName": "connectDomain",
+          "marketingName": "External domain",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 7,
+          "technicalName": "analytics",
+          "marketingName": "Analytics",
+          "featureValue": "advanced"
+        },
+        {
+          "featureId": 8,
+          "technicalName": "support",
+          "marketingName": "Premium support",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 9,
+          "technicalName": "advertisement",
+          "marketingName": "Advertisement",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 10,
+          "technicalName": "sections",
+          "marketingName": "Sections",
+          "featureValue": "50"
+        },
+        {
+          "featureId": 11,
+          "technicalName": "enableBlocks",
+          "marketingName": "Enable blocks",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 12,
+          "technicalName": "enableFeatures",
+          "marketingName": "Enable features",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 13,
+          "technicalName": "enableMarginals",
+          "marketingName": "Enable marginals",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 14,
+          "technicalName": "ecommerceTemplates",
+          "marketingName": "Ecommerce Templates",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 15,
+          "technicalName": "ecommerce",
+          "marketingName": "Ecommerce",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 16,
+          "technicalName": "productLimit",
+          "marketingName": "Product Limit",
+          "featureValue": "50"
+        },
+        {
+          "featureId": 17,
+          "technicalName": "storeProduct",
+          "marketingName": "Store Product",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 18,
+          "technicalName": "storeCatalog",
+          "marketingName": "Store Catalog",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 19,
+          "technicalName": "ecommerceCart",
+          "marketingName": "Ecommerce Cart",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 20,
+          "technicalName": "shipping",
+          "marketingName": "Shipping",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 21,
+          "technicalName": "storeLimit",
+          "marketingName": "storeLimit",
+          "featureValue": "1"
+        },
+        {
+          "featureId": 22,
+          "technicalName": "storeProvider",
+          "marketingName": "storeProvider",
+          "featureValue": "ecwid"
+        },
+        {
+          "featureId": 23,
+          "technicalName": "storePlan",
+          "marketingName": "storePlan",
+          "featureValue": "SITEPLUS_BASIC"
+        },
+        {
+          "featureId": 29,
+          "technicalName": "editorCapability",
+          "marketingName": "editorCapability",
+          "featureValue": "store"
+        },
+        {
+          "featureId": 30,
+          "technicalName": "maxFileSize",
+          "marketingName": "maxFileSize",
+          "featureValue": "104857600"
+        },
+        {
+          "featureId": 31,
+          "technicalName": "maxStorePlan",
+          "marketingName": "maxStorePlan",
+          "featureValue": "SITEPLUS_BASIC"
+        },
+        {
+          "featureId": 32,
+          "technicalName": "facebook",
+          "marketingName": "facebook",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 33,
+          "technicalName": "marketplace",
+          "marketingName": "marketplace",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 34,
+          "technicalName": "customBlockLimit",
+          "marketingName": "customBlockLimit",
+          "featureValue": "30"
+        }
+      ],
+      "addons": [
+        {
+          "memberAddonId": 223,
+          "memberId": 1001610,
+          "addonId": 1,
+          "periodId": 12,
+          "technicalName": "1_site",
+          "marketingName": "1 site",
+          "status": "active",
+          "value": "1",
+          "dateAdded": "2018-08-02 11:31:39",
+          "expiredDate": "2019-08-02 11:31:39",
+          "feature": {
+            "featureId": 1,
+            "featureTypeId": 1,
+            "technicalName": "sites",
+            "marketingName": "Sites"
+          }
+        }
+      ],
+      "domains": [],
+      "limits": {
+        "maxAllowedProjects": 1500,
+        "outOfPlanLimit": 1500,
+        "maxAllowedSites": 2,
+        "maxAllowedPages": 20,
+        "maxFileStorageSpace": 1073741824,
+        "showAdvertisement": false,
+        "support": false,
+        "freeDomains": true,
+        "connectDomain": true,
+        "analytics": "advanced",
+        "ecommerce": {
+          "ecommerce": true,
+          "ecommerceTemplates": true,
+          "storeProduct": true,
+          "storeCatalog": true,
+          "ecommerceCart": true,
+          "shipping": true,
+          "storeProviders": {
+            "ecwid": {
+              "SITEPLUS_BASIC": {
+                "productLimit": 50,
+                "storeLimit": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "newEmail": "",
+  "emailChanged": false,
+  "linkedAccounts": [],
+  "emailVerified": false,
+  "limits": {
+    "maxAllowedSites": 2,
+    "maxAllowedProjects": 1500,
+    "outOfPlanLimit": 1500,
+    "maxFileStorageSpace": 1073741824,
+    "mustShowAdvertisement": false,
+    "maxAllowedPages": 20,
+    "enableFeatures": true,
+    "enableBlocks": true,
+    "enableMarginals": true,
+    "maxAllowedSections": 50,
+    "ecommerce": {
+      "ecommerce": true,
+      "ecommerceTemplates": true,
+      "storeProduct": true,
+      "storeCatalog": true,
+      "ecommerceCart": true,
+      "shipping": true,
+      "storeProviders": {
+        "ecwid": {
+          "SITEPLUS_BASIC": {
+            "productLimit": 50,
+            "storeLimit": 1
+          }
+        }
+      }
+    }
+  },
+  "showAdvertisement": false
+}

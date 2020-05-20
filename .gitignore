@@ -1,0 +1,9 @@
+.idea
+*.swp
+*.swo
+node_modules
+npm-debug.log
+package-lock.json
+.env
+.env.*
+.DS_Store

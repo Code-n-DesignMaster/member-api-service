@@ -1,0 +1,28 @@
+version: "3"
+services:
+  member-api-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    command: >
+        sh -c "NPM_REGISTRY=https://npm.siteplus.org NPM_USER=$NPM_USER NPM_PASS=$NPM_TOKEN NPM_EMAIL=$NPM_USER@siteplus.com npm-cli-login &&
+        npm config set registry 'https://npm.siteplus.org' &&
+        npm install &&
+        pm2-docker process.json"
+    env_file: .env
+    ports:
+      - 9007:8080
+    volumes:
+      - .:/app
+    networks:
+      - localnet
+    restart: always
+
+volumes:
+  node_modules:
+
+networks:
+  localnet:
+    ipam:
+      config:
+        - subnet: "${NETWORK_SUBNET}"

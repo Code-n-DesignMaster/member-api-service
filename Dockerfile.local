@@ -1,0 +1,7 @@
+FROM registry.siteplus.org/nodejs-dev/tools/builder/common:e6054c0b
+COPY . /app
+RUN addgroup -S app && adduser -S app -G app
+WORKDIR /app
+RUN npm install -g pm2
+EXPOSE 8080
+CMD ["node", "./bin/www"]

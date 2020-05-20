@@ -1,0 +1,831 @@
+{
+  "account": {
+    "id": 1001610,
+    "email": "nodejs.test@siteplus.com",
+    "fullName": "Nodejs Test",
+    "firstName": "Nodejs",
+    "lastName": "Test",
+    "status": "active",
+    "timezone": 90,
+    "language": 0,
+    "resellerId": 1,
+    "currencyId": 3,
+    "emailContentType": "html",
+    "accountUsage": "0",
+    "verified": false,
+    "shard": {
+      "shardId": 1,
+      "uid": "c0240d43-b9f9-4ecd-8c4b-bb7542268017",
+      "description": "EU"
+    },
+    "reseller": {
+      "resellerId": 1,
+      "domain": "siteplus.wtf",
+      "dynamicSubdomain": "siteplus.wtf",
+      "name": "Siteplus"
+    },
+    "type": "test",
+    "contact": {
+      "address": "Martin Pl 1",
+      "city": "Sydney",
+      "zip": "2000",
+      "country": "Australia",
+      "state": "NSW",
+      "phone": "61 282 231 111"
+    },
+    "settings": [
+      {
+        "settingCategoryId": 1,
+        "categoryTechnicalName": "relay",
+        "categoryMarketingName": "relay",
+        "settings": [
+          {
+            "settingId": 2,
+            "settingTechnicalName": "planUpgradeUrl",
+            "settingMarketingName": "plan upgrade url",
+            "value": "https://siteplus.wtf"
+          },
+          {
+            "settingId": 3,
+            "settingTechnicalName": "redirectLogoutUrl",
+            "settingMarketingName": "Redirect url when logged out",
+            "value": "https://siteplus.wtf"
+          },
+          {
+            "settingId": 56,
+            "settingTechnicalName": "publishTransferProtocol",
+            "settingMarketingName": "Publish Transfer Protocol",
+            "value": "sftp"
+          },
+          {
+            "settingId": 57,
+            "settingTechnicalName": "publishPort",
+            "settingMarketingName": "Publish Port",
+            "value": "22"
+          },
+          {
+            "settingId": 58,
+            "settingTechnicalName": "prePublishCheck",
+            "settingMarketingName": "Pre publish check",
+            "value": "true"
+          },
+          {
+            "settingId": 61,
+            "settingTechnicalName": "freeDomainSsl",
+            "settingMarketingName": "Free Domain SSL",
+            "value": true
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 2,
+        "categoryTechnicalName": "security",
+        "categoryMarketingName": "security",
+        "settings": [
+          {
+            "settingId": 5,
+            "settingTechnicalName": "sessionLifetime",
+            "settingMarketingName": "Member lifetime session",
+            "value": "362100"
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 3,
+        "categoryTechnicalName": "marketing",
+        "categoryMarketingName": "marketing",
+        "settings": [
+          {
+            "settingId": 13,
+            "settingTechnicalName": "freeDomainTypeTitle",
+            "settingMarketingName": "Free Domain Type Title",
+            "value": "Use a Subdomain of Siteplus.com"
+          },
+          {
+            "settingId": 14,
+            "settingTechnicalName": "connectedDomainTypeTitle",
+            "settingMarketingName": "Connected Domain Type Title",
+            "value": ""
+          },
+          {
+            "settingId": 15,
+            "settingTechnicalName": "partnerDomainTypeTitle",
+            "settingMarketingName": "Partner Domain Type Title",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 4,
+        "categoryTechnicalName": "branding",
+        "categoryMarketingName": "branding",
+        "settings": [
+          {
+            "settingId": 6,
+            "settingTechnicalName": "logoDashboard",
+            "settingMarketingName": "Dashboard logo",
+            "value": ""
+          },
+          {
+            "settingId": 7,
+            "settingTechnicalName": "logoInvoice",
+            "settingMarketingName": "Invoice logo",
+            "value": "https://filestorage-api-service.siteplus.wtf/resellersLogos/1/logoInvoice.svg"
+          },
+          {
+            "settingId": 8,
+            "settingTechnicalName": "logoEditor",
+            "settingMarketingName": "Editor logo",
+            "value": ""
+          },
+          {
+            "settingId": 9,
+            "settingTechnicalName": "logoPublish",
+            "settingMarketingName": "Publish logo",
+            "value": ""
+          },
+          {
+            "settingId": 10,
+            "settingTechnicalName": "logoTaken",
+            "settingMarketingName": "Taken logo",
+            "value": "https://static.siteplus.com/branding/logoTaken.svg"
+          },
+          {
+            "settingId": 11,
+            "settingTechnicalName": "logoFree",
+            "settingMarketingName": "Free logo",
+            "value": "https://filestorage-api-service.siteplus.wtf/resellersLogos/1/logoFree.svg"
+          },
+          {
+            "settingId": 12,
+            "settingTechnicalName": "logoError404",
+            "settingMarketingName": "404 logo",
+            "value": ""
+          },
+          {
+            "settingId": 42,
+            "settingTechnicalName": "favicon",
+            "settingMarketingName": "Partner favicon",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 5,
+        "categoryTechnicalName": "templates",
+        "categoryMarketingName": "templates",
+        "settings": [
+          {
+            "settingId": 1,
+            "settingTechnicalName": "accountTemplate",
+            "settingMarketingName": "account template ",
+            "value": "customer"
+          },
+          {
+            "settingId": 4,
+            "settingTechnicalName": "subscriptionTemplate",
+            "settingMarketingName": "subscription template",
+            "value": "default"
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 6,
+        "categoryTechnicalName": "metaTags",
+        "categoryMarketingName": "metaTags",
+        "settings": [
+          {
+            "settingId": 16,
+            "settingTechnicalName": "freeTitle",
+            "settingMarketingName": "Free title",
+            "value": "{\"blocks\":[{\"key\":\"59e0p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 17,
+            "settingTechnicalName": "freeDescription",
+            "settingMarketingName": "Free description",
+            "value": "{\"blocks\":[{\"key\":\"19qvo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 18,
+            "settingTechnicalName": "paidTitle",
+            "settingMarketingName": "Paid title",
+            "value": "{\"blocks\":[{\"key\":\"8thr4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 19,
+            "settingTechnicalName": "paidDescription",
+            "settingMarketingName": "Paid description",
+            "value": "{\"blocks\":[{\"key\":\"cgr58\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 20,
+            "settingTechnicalName": "accountManagerTitle",
+            "settingMarketingName": "Account manager title",
+            "value": "{\"blocks\":[{\"key\":\"2jfv0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 21,
+            "settingTechnicalName": "accountManagerDescription",
+            "settingMarketingName": "Account manager description",
+            "value": "{\"blocks\":[{\"key\":\"27ocp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 22,
+            "settingTechnicalName": "siteEditorTitle",
+            "settingMarketingName": "Site editor title",
+            "value": "{\"blocks\":[{\"key\":\"d07on\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 23,
+            "settingTechnicalName": "siteEditorDescription",
+            "settingMarketingName": "Site editor description",
+            "value": "{\"blocks\":[{\"key\":\"dbkaf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 44,
+            "settingTechnicalName": "copyright",
+            "settingMarketingName": "Copyright",
+            "value": "{\"blocks\":[{\"key\":\"8f6ji\",\"text\":\"2018 testReseller  dfhfghfgdhdgh\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"offset\":19,\"length\":13,\"key\":0}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"LINK\",\"mutability\":\"MUTABLE\",\"data\":{\"url\":\"Https://sdfsdf.fgh\"}}}}"
+          },
+          {
+            "settingId": 45,
+            "settingTechnicalName": "promoBannerTitle",
+            "settingMarketingName": "Promo Banner Title",
+            "value": "{\"blocks\":[{\"key\":\"3nt62\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 46,
+            "settingTechnicalName": "promoBannerDescription",
+            "settingMarketingName": "Promo Banner Description",
+            "value": "{\"blocks\":[{\"key\":\"3nt63\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}"
+          },
+          {
+            "settingId": 59,
+            "settingTechnicalName": "promoBannerType",
+            "settingMarketingName": "Promo Banner Type",
+            "value": "defaultPromo"
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 7,
+        "categoryTechnicalName": "general",
+        "categoryMarketingName": "general",
+        "settings": [
+          {
+            "settingId": 24,
+            "settingTechnicalName": "partnerName",
+            "settingMarketingName": "Partner name",
+            "value": "Siteplus"
+          },
+          {
+            "settingId": 32,
+            "settingTechnicalName": "partnerEmail",
+            "settingMarketingName": "Partner email",
+            "value": "customerc11212are@siteplus.com"
+          },
+          {
+            "settingId": 33,
+            "settingTechnicalName": "partnerPhone",
+            "settingMarketingName": "Partner phone",
+            "value": "1 212-121-2121"
+          },
+          {
+            "settingId": 34,
+            "settingTechnicalName": "partnerCountry",
+            "settingMarketingName": "Partner country",
+            "value": "1233"
+          },
+          {
+            "settingId": 35,
+            "settingTechnicalName": "loginAddress",
+            "settingMarketingName": "Partner login address",
+            "value": "https://site"
+          },
+          {
+            "settingId": 36,
+            "settingTechnicalName": "logoutAddress",
+            "settingMarketingName": "Partner logout address",
+            "value": ""
+          },
+          {
+            "settingId": 37,
+            "settingTechnicalName": "statisticPeriodType",
+            "settingMarketingName": "Stat period type",
+            "value": "calendar"
+          },
+          {
+            "settingId": 40,
+            "settingTechnicalName": "partnerTimezone",
+            "settingMarketingName": "Partner time zone",
+            "value": 0
+          },
+          {
+            "settingId": 41,
+            "settingTechnicalName": "contactPerson",
+            "settingMarketingName": "Partner contact person",
+            "value": "Person"
+          },
+          {
+            "settingId": 43,
+            "settingTechnicalName": "businessDomain",
+            "settingMarketingName": "Business Domain",
+            "value": "https://siteplus.wtf"
+          },
+          {
+            "settingId": 55,
+            "settingTechnicalName": "subscriptionDisplayType",
+            "settingMarketingName": "Subscription display type",
+            "value": "subscription"
+          },
+          {
+            "settingId": 63,
+            "settingTechnicalName": "externalDashboardUrl",
+            "settingMarketingName": "externalDashboardUrl",
+            "value": ""
+          },
+          {
+            "settingId": 64,
+            "settingTechnicalName": "brandUrl",
+            "settingMarketingName": "Brand url",
+            "value": ""
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 8,
+        "categoryTechnicalName": "notifications",
+        "categoryMarketingName": "notifications",
+        "settings": [
+          {
+            "settingId": 25,
+            "settingTechnicalName": "headerLogo",
+            "settingMarketingName": "Email header logo",
+            "value": ""
+          },
+          {
+            "settingId": 26,
+            "settingTechnicalName": "footerLogo",
+            "settingMarketingName": "Email footer logo",
+            "value": ""
+          },
+          {
+            "settingId": 27,
+            "settingTechnicalName": "footerAddressLineOne",
+            "settingMarketingName": "Email footer address",
+            "value": "Default address"
+          },
+          {
+            "settingId": 28,
+            "settingTechnicalName": "footerTerms",
+            "settingMarketingName": "Email footer terms",
+            "value": "Default terms"
+          },
+          {
+            "settingId": 29,
+            "settingTechnicalName": "fromEmail",
+            "settingMarketingName": "From to email",
+            "value": "dev.customercare@siteplus.com"
+          },
+          {
+            "settingId": 30,
+            "settingTechnicalName": "replyEmail",
+            "settingMarketingName": "Reply to email",
+            "value": "dev.customercare@siteplus.com"
+          },
+          {
+            "settingId": 31,
+            "settingTechnicalName": "fromName",
+            "settingMarketingName": "Email from name",
+            "value": "Siteplus"
+          },
+          {
+            "settingId": 38,
+            "settingTechnicalName": "footerAddressLineTwo",
+            "settingMarketingName": "Email footer address",
+            "value": "Default adress line two"
+          },
+          {
+            "settingId": 47,
+            "settingTechnicalName": "notificationCopyright",
+            "settingMarketingName": "Partner copyright",
+            "value": "$year$ $partnerName$, Pte Ltd. All Rights Reserved."
+          },
+          {
+            "settingId": 60,
+            "settingTechnicalName": "jiraTicketReviewNotification",
+            "settingMarketingName": "Jira Ticket Review Notification",
+            "value": "all"
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 9,
+        "categoryTechnicalName": "plan",
+        "categoryMarketingName": "plan",
+        "settings": [
+          {
+            "settingId": 39,
+            "settingTechnicalName": "editorCapability",
+            "settingMarketingName": "editorCapability",
+            "value": {
+              "availableFeatures": null,
+              "sidebarSettings": null,
+              "sidebarThemes": null,
+              "availableBlocks": null,
+              "blocks": {
+                "limit": 50
+              },
+              "onlyHomepage": false,
+              "enableMarginals": true,
+              "disableDashboard": false,
+              "enableBlocks": true
+            }
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 10,
+        "categoryTechnicalName": "legalStatements",
+        "categoryMarketingName": "legalStatements",
+        "settings": [
+          {
+            "settingId": 48,
+            "settingTechnicalName": "businessCopyright",
+            "settingMarketingName": "Business copyright",
+            "value": " http://google.com"
+          },
+          {
+            "settingId": 49,
+            "settingTechnicalName": "termsLinkTitle",
+            "settingMarketingName": "Terms text",
+            "value": "General Terms"
+          },
+          {
+            "settingId": 50,
+            "settingTechnicalName": "termsLink",
+            "settingMarketingName": "Terms link",
+            "value": "http://google.com"
+          },
+          {
+            "settingId": 51,
+            "settingTechnicalName": "privacyLinkTitle",
+            "settingMarketingName": "Privacy text",
+            "value": "Privacy Policy"
+          },
+          {
+            "settingId": 52,
+            "settingTechnicalName": "privacyLink",
+            "settingMarketingName": "Privacy link",
+            "value": "http://google.com"
+          },
+          {
+            "settingId": 53,
+            "settingTechnicalName": "customLinkTitle",
+            "settingMarketingName": "Custom link title",
+            "value": "http://google.com"
+          },
+          {
+            "settingId": 54,
+            "settingTechnicalName": "customLink",
+            "settingMarketingName": "Custom link",
+            "value": "http://google.com"
+          }
+        ]
+      },
+      {
+        "settingCategoryId": 11,
+        "categoryTechnicalName": "brandingTheme",
+        "categoryMarketingName": "brandingTheme",
+        "settings": [
+          {
+            "settingId": 65,
+            "settingTechnicalName": "colorTheme",
+            "settingMarketingName": "Color theme",
+            "value": "custom"
+          },
+          {
+            "settingId": 66,
+            "settingTechnicalName": "defaultColor",
+            "settingMarketingName": "Default color",
+            "value": "#aaaaaa"
+          },
+          {
+            "settingId": 67,
+            "settingTechnicalName": "hoverColor",
+            "settingMarketingName": "Hover color",
+            "value": "#bbbbbb"
+          },
+          {
+            "settingId": 68,
+            "settingTechnicalName": "focusColor",
+            "settingMarketingName": "Focus color",
+            "value": "#cccccc"
+          },
+          {
+            "settingId": 69,
+            "settingTechnicalName": "pressedColor",
+            "settingMarketingName": "Pressed color",
+            "value": "#dddddd"
+          },
+          {
+            "settingId": 70,
+            "settingTechnicalName": "cssLogoFilter",
+            "settingMarketingName": "Css logo filter",
+            "value": ""
+          },
+          {
+            "settingId": 71,
+            "settingTechnicalName": "themeApplyVariation",
+            "settingMarketingName": "Theme apply variation",
+            "value": "standard"
+          }
+        ]
+      }
+    ]
+  },
+  "subscriptions": [
+    {
+      "productId": 1636,
+      "memberId": 1001610,
+      "planId": 13,
+      "productName": "Siteplus Personal Ecommerce",
+      "status": "active",
+      "type": "paid",
+      "dateAdded": "2018-05-31 09:56:51",
+      "expiredDate": "2019-08-03 07:28:13",
+      "period": {
+        "periodId": 12,
+        "technicalName": "Annual",
+        "marketingName": "Annual",
+        "isTrial": false
+      },
+      "plan": {
+        "productTemplateId": 1,
+        "technicalName": "Siteplus Personal Ecommerce",
+        "marketingName": "Siteplus Personal Ecommerce",
+        "description": "Siteplus Personal Ecommerce",
+        "isSpecial": false
+      },
+      "productTemplate": {
+        "productTemplateId": 1,
+        "technicalName": "sitebuilder",
+        "marketingName": "sitebuilder"
+      },
+      "features": [
+        {
+          "featureId": 1,
+          "technicalName": "sites",
+          "marketingName": "Sites",
+          "featureValue": "1"
+        },
+        {
+          "featureId": 2,
+          "technicalName": "projects",
+          "marketingName": "Projects",
+          "featureValue": "1500"
+        },
+        {
+          "featureId": 3,
+          "technicalName": "storage",
+          "marketingName": "Storage",
+          "featureValue": "1073741824"
+        },
+        {
+          "featureId": 4,
+          "technicalName": "pages",
+          "marketingName": "Pages per project",
+          "featureValue": "20"
+        },
+        {
+          "featureId": 5,
+          "technicalName": "freeDomains",
+          "marketingName": "Free domains",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 6,
+          "technicalName": "connectDomain",
+          "marketingName": "External domain",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 7,
+          "technicalName": "analytics",
+          "marketingName": "Analytics",
+          "featureValue": "advanced"
+        },
+        {
+          "featureId": 8,
+          "technicalName": "support",
+          "marketingName": "Premium support",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 9,
+          "technicalName": "advertisement",
+          "marketingName": "Advertisement",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 10,
+          "technicalName": "sections",
+          "marketingName": "Sections",
+          "featureValue": "50"
+        },
+        {
+          "featureId": 11,
+          "technicalName": "enableBlocks",
+          "marketingName": "Enable blocks",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 12,
+          "technicalName": "enableFeatures",
+          "marketingName": "Enable features",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 13,
+          "technicalName": "enableMarginals",
+          "marketingName": "Enable marginals",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 14,
+          "technicalName": "ecommerceTemplates",
+          "marketingName": "Ecommerce Templates",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 15,
+          "technicalName": "ecommerce",
+          "marketingName": "Ecommerce",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 16,
+          "technicalName": "productLimit",
+          "marketingName": "Product Limit",
+          "featureValue": "50"
+        },
+        {
+          "featureId": 17,
+          "technicalName": "storeProduct",
+          "marketingName": "Store Product",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 18,
+          "technicalName": "storeCatalog",
+          "marketingName": "Store Catalog",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 19,
+          "technicalName": "ecommerceCart",
+          "marketingName": "Ecommerce Cart",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 20,
+          "technicalName": "shipping",
+          "marketingName": "Shipping",
+          "featureValue": "true"
+        },
+        {
+          "featureId": 21,
+          "technicalName": "storeLimit",
+          "marketingName": "storeLimit",
+          "featureValue": "1"
+        },
+        {
+          "featureId": 22,
+          "technicalName": "storeProvider",
+          "marketingName": "storeProvider",
+          "featureValue": "ecwid"
+        },
+        {
+          "featureId": 23,
+          "technicalName": "storePlan",
+          "marketingName": "storePlan",
+          "featureValue": "SITEPLUS_BASIC"
+        },
+        {
+          "featureId": 29,
+          "technicalName": "editorCapability",
+          "marketingName": "editorCapability",
+          "featureValue": "store"
+        },
+        {
+          "featureId": 30,
+          "technicalName": "maxFileSize",
+          "marketingName": "maxFileSize",
+          "featureValue": "104857600"
+        },
+        {
+          "featureId": 31,
+          "technicalName": "maxStorePlan",
+          "marketingName": "maxStorePlan",
+          "featureValue": "SITEPLUS_BASIC"
+        },
+        {
+          "featureId": 32,
+          "technicalName": "facebook",
+          "marketingName": "facebook",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 33,
+          "technicalName": "marketplace",
+          "marketingName": "marketplace",
+          "featureValue": "false"
+        },
+        {
+          "featureId": 34,
+          "technicalName": "customBlockLimit",
+          "marketingName": "customBlockLimit",
+          "featureValue": "30"
+        }
+      ],
+      "addons": [
+        {
+          "memberAddonId": 223,
+          "memberId": 1001610,
+          "addonId": 1,
+          "periodId": 12,
+          "technicalName": "1_site",
+          "marketingName": "1 site",
+          "status": "active",
+          "value": "1",
+          "dateAdded": "2018-08-02 11:31:39",
+          "expiredDate": "2019-08-02 11:31:39",
+          "feature": {
+            "featureId": 1,
+            "featureTypeId": 1,
+            "technicalName": "sites",
+            "marketingName": "Sites"
+          }
+        }
+      ],
+      "domains": [],
+      "limits": {
+        "maxAllowedProjects": 1500,
+        "outOfPlanLimit": 1500,
+        "maxAllowedSites": 2,
+        "maxAllowedPages": 20,
+        "maxFileStorageSpace": 1073741824,
+        "showAdvertisement": false,
+        "support": false,
+        "freeDomains": true,
+        "connectDomain": true,
+        "analytics": "advanced",
+        "ecommerce": {
+          "ecommerce": true,
+          "ecommerceTemplates": true,
+          "storeProduct": true,
+          "storeCatalog": true,
+          "ecommerceCart": true,
+          "shipping": true,
+          "storeProviders": {
+            "ecwid": {
+              "SITEPLUS_BASIC": {
+                "productLimit": 50,
+                "storeLimit": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "limits": {
+    "maxAllowedProjects": 1500,
+    "maxAllowedSites": 2,
+    "outOfPlanLimit": 1500,
+    "maxFileStorageSpace": 1073741824,
+    "maxAllowedPages": 20,
+    "mustShowAdvertisement": false,
+    "analytics": "advanced",
+    "freeDomains": true,
+    "connectDomain": true,
+    "support": false,
+    "ecommerce": {
+      "ecommerce": true,
+      "ecommerceTemplates": true,
+      "storeProduct": true,
+      "storeCatalog": true,
+      "ecommerceCart": true,
+      "shipping": true,
+      "storeProviders": {
+        "ecwid": {
+          "SITEPLUS_BASIC": {
+            "productLimit": 50,
+            "storeLimit": 1
+          }
+        }
+      }
+    }
+  }
+}

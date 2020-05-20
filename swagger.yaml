@@ -1,0 +1,417 @@
+openapi: 3.0.0
+info:
+  title: Member-api-service API
+  description: Member-api-service
+  version: 0.0.1
+  license:
+    name: ISC
+servers:
+  - url: '{protocol}://{uri}'
+    description: Member service API
+    variables:
+      protocol:
+        enum:
+          - http
+          - https
+        default: http
+      uri:
+        default: 'localhost:9007'
+tags:
+  - name: Platform
+paths:
+  /v2.0/templates:
+    get:
+      security:
+        - apiKey: []
+      tags:
+        - Templates v2
+      description: Get templates
+      responses:
+        '200':
+          description: templates
+  /platform/plan:
+    get:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Plan
+      description: Get plan
+      responses:
+        '200':
+          description: Plan
+  /platform/auth:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Auth
+      description: Auth
+      responses:
+        '200':
+          description: Success
+      requestBody:
+        $ref: '#/components/requestBodies/auth'
+  /platform/demo:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Demo
+      description: Demo
+      responses:
+        '200':
+          description: Success
+      requestBody:
+        $ref: '#/components/requestBodies/demo'
+  /platform/contact:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Contact
+      description: Contact
+      responses:
+        '200':
+          description: Success
+      requestBody:
+        $ref: '#/components/requestBodies/contact'
+  /platform/payment-settings:
+    get:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Payment
+      description: Get peyment
+      responses:
+        '200':
+          description: Payment Settings
+  /platform/partner:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: Create partner
+      responses:
+        '200':
+          description: Partner created
+      requestBody:
+        $ref: '#/components/requestBodies/partner'
+  /platform/partner/auth:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: Auth partner
+      responses:
+        '200':
+          description: success 
+      requestBody:
+        $ref: '#/components/requestBodies/auth'
+  /platform/partner/{uid}:
+    get:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: Create partner
+      parameters:
+        - name: uid
+          in: path
+          description: partner uid
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Partner created
+    put:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: Create partner
+      parameters:
+        - name: uid
+          in: path
+          description: partner uid
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Partner created
+      requestBody:
+        $ref: '#/components/requestBodies/partner'
+  '/platform/partner/{uid}/payment':
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: Create payment
+      parameters:
+        - name: uid
+          in: path
+          description: partner id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Partner created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                source:
+                  type: string
+                billingAddress:
+                  type: object
+                  properties:
+                    city:
+                      type: string
+                    country:
+                      type: string
+                    address:
+                      type: string
+                    state:
+                      type: string
+                    zip:
+                      type: string
+  /platform/partner/email-check:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform Partner
+      description: check email
+      responses:
+        '200':
+          description: email free
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+        required: true 
+  /platform/user:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: Create project
+      responses:
+        '200':
+          description: User created
+      requestBody:
+        $ref: '#/components/requestBodies/user'
+  /platform/user/auth:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: Auth user
+      responses:
+        '200':
+          description: success 
+      requestBody:
+        $ref: '#/components/requestBodies/auth'
+  '/platform/user/{uid}':
+    get:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: get user
+      parameters:
+        - name: uid
+          in: path
+          description: user id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User
+    put:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: update user
+      parameters:
+        - name: uid
+          in: path
+          description: user id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User updated
+      requestBody:
+        $ref: '#/components/requestBodies/user'
+  
+  /platform/user/email-check:
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: check email
+      responses:
+        '200':
+          description: email free
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+        required: true
+  '/platform/user/{uid}/payment':
+    post:
+      security:
+        - apiKey: []
+      tags:
+        - Platform User
+      description: Create payment
+      parameters:
+        - name: uid
+          in: path
+          description: user id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User created
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                source:
+                  type: string
+                billingAddress:
+                  type: object
+                  properties:
+                    city:
+                      type: string
+                    country:
+                      type: string
+                    address:
+                      type: string
+                    state:
+                      type: string
+                    zip:
+                      type: string
+        required: true
+  
+
+components:
+  requestBodies:
+    auth:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              email:
+                type: string
+              password:
+                type: string
+      required: true
+    demo:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+              email:
+                type: string
+              country:
+                type: string
+              businessName:
+                type: string
+    contact:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              name:
+                type: string
+              phone:
+                type: string
+              email:
+                type: string
+              company:
+                type: string
+              text:
+                type: string
+      required: true
+    partner:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              planId:
+                type: number
+              periodId:
+                type: number
+              currencyId:
+                type: number
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+              password:
+                type: string
+              phone:
+                type: string
+              name:
+                type: string
+              url:
+                type: string
+              entity:
+                type: boolean
+      required: true
+    user:
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              planId:
+                type: number
+              periodId:
+                type: number
+              currencyId:
+                type: number
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+              password:
+                type: string
+      required: true

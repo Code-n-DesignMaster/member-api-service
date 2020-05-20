@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "node": true
+  },
+  "rules": {
+    // enable additional rules
+    "radix": "off",
+    "no-use-before-define": "off",
+    "max-len": ["warn", { "code": 120 }],
+    "prefer-destructuring": ["warn", {
+      "array": true,
+      "object": true
+    }]
+  }
+}

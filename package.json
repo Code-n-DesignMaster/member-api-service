@@ -1,0 +1,59 @@
+{
+  "name": "member-api-service",
+  "version": "2.0.0",
+  "description": "Member API service",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=staging mocha --timeout 5000",
+    "test:local": "NODE_ENV=local mocha --timeout 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git01.siteplus.com:SitePlus/member-api-service.git"
+  },
+  "author": "SitePlus Backend Team",
+  "license": "ISC",
+  "dependencies": {
+    "@godaddy/terminus": "2.4.1",
+    "@sp/ecwid-templates": "~0.0.4",
+    "@sp/mongoose-models": "1.2.1",
+    "@sp/nodejs-app-metrics": "1.0.0",
+    "@sp/nodejs-fixtures": "1.0.6",
+    "@sp/nodejs-hosting-client": "0.1.10",
+    "@sp/nodejs-logger": "1.0.0",
+    "@sp/nodejs-utils": "1.1.7",
+    "@sp/nodejs-validation": "1.0.2",
+    "blocked-at": "1.1.2",
+    "body-parser": "1.18.3",
+    "co": "^4.6.0",
+    "cookie-parser": "1.4.3",
+    "cors": "2.8.4",
+    "debug": "4.1.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.14.1",
+    "express-useragent": "^1.0.7",
+    "flat": "4.1.0",
+    "flickr-sdk": "^3.5.0",
+    "geoip-lite": "^1.2.0",
+    "joi": "^13.3.0",
+    "lodash": "^4.17.4",
+    "morgan": "1.9.0",
+    "nconf": "^0.10.0",
+    "request": "2.88.0",
+    "request-promise": "4.2.4",
+    "swagger-ui-express": "3.0.10",
+    "transliteration": "~1.5.3",
+    "uuid": "3.2.1",
+    "yamljs": "0.3.0"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "eslint": "4.19.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-plugin-import": "2.7.0",
+    "mocha": "5.2.0",
+    "should": "13.2.3",
+    "supertest": "3.1.0"
+  }
+}

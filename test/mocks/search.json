@@ -1,0 +1,47 @@
+[
+  {
+    "street_number": "1",
+    "route": "Martin Pl",
+    "locality": "Sydney",
+    "state": "NSW",
+    "countryCode": "au",
+    "postal_code": "2000",
+    "id": "6f71bda600d0da70e6a7a44bce2fc29e66393c98"
+  },
+  {
+    "street_number": "1",
+    "route": "Martin St",
+    "locality": "Brighton",
+    "state": "VIC",
+    "countryCode": "au",
+    "postal_code": "3186",
+    "id": "67ecd8106c84f712ce0f87991070b973873ef7b8"
+  },
+  {
+    "street_number": "1",
+    "route": "Martin Pl",
+    "locality": "Mortdale",
+    "state": "NSW",
+    "countryCode": "au",
+    "postal_code": "2223",
+    "id": "867c470b97f9f437b7475ad0dfce98a4151da542"
+  },
+  {
+    "street_number": "1",
+    "route": "Martin Pl",
+    "locality": "Canning Vale",
+    "state": "WA",
+    "countryCode": "au",
+    "postal_code": "6155",
+    "id": "76b5b5659c304a6a229f4e563698a3ea64f1e1de"
+  },
+  {
+    "street_number": "1",
+    "route": "Martin Pl",
+    "locality": "Glen Waverley",
+    "state": "VIC",
+    "countryCode": "au",
+    "postal_code": "3150",
+    "id": "3f72991b4ebe35649e1adadb59c4cd659bffd3ce"
+  }
+]

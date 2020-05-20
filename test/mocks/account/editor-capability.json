@@ -1,0 +1,70 @@
+{
+  "availableFeatures": null,
+  "sidebarSettings": null,
+  "sidebarThemes": [
+    {
+      "name": "colours"
+    },
+    {
+      "name": "fonts"
+    },
+    {
+      "name": "headings"
+    },
+    {
+      "name": "links"
+    },
+    {
+      "name": "buttons"
+    },
+    {
+      "name": "quotes"
+    }
+  ],
+  "availableBlocks": null,
+  "blocks": {
+    "limit": 50
+  },
+  "onlyHomepage": false,
+  "enableMarginals": true,
+  "disableDashboard": false,
+  "enableBlocks": true,
+  "store": [],
+  "type": "store",
+  "ecommerce": {
+    "availableFeatures": [
+      {
+        "name": "storeProduct",
+        "limit": 50
+      },
+      {
+        "name": "storeCatalog",
+        "limit": 9999
+      }
+    ],
+    "storeCapability": {
+      "managePayments": true,
+      "manageShipping": true,
+      "manageNotifications": true,
+      "customNotificationLogo": true,
+      "manageCategories": true,
+      "manageMarketplaces": true,
+      "manageOnlineStore": true,
+      "showPayments": true,
+      "showShipping": true
+    }
+  },
+  "upgradeSettings": null,
+  "customBlock": {
+    "enabled": true,
+    "limit": 30
+  },
+  "siteEditor": [
+    {
+      "name": "blockCreator"
+    }
+  ],
+  "blog": {
+    "enabled": true
+  }
+}

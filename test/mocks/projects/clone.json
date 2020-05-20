@@ -1,0 +1,50 @@
+{
+  "_id": "a7c2d0b1-17e0-4ef6-8357-92fd69dec77a",
+  "updatedAt": "2018-08-14T13:30:03.362Z",
+  "createdAt": "2018-08-14T13:30:03.166Z",
+  "userId": "1001610",
+  "name": "Marketing v3",
+  "template": {
+    "title": "Marketing v3",
+    "description": "",
+    "src": "https://image-api-service.siteplus.wtf/projects/03c6d1f9-6f39-405b-9acc-c20d0289f409"
+  },
+  "resellerId": "1",
+  "migrated": false,
+  "screenshotsDone": true,
+  "updatesCounter": 0,
+  "hasChangesAt": "2018-08-14T13:30:04.216Z",
+  "deletedAt": null,
+  "deleted": false,
+  "firstPublishedAt": null,
+  "publishedAt": null,
+  "published": false,
+  "hasChanges": false,
+  "num": 17,
+  "domains": [
+    {
+      "updatedAt": "2018-08-14T13:30:03.313Z",
+      "createdAt": "2018-08-14T13:30:03.313Z",
+      "verificationHash": "d4f250cf5a8f1974",
+      "name": "nodejs-test-84980",
+      "project": "a7c2d0b1-17e0-4ef6-8357-92fd69dec77a",
+      "userId": "1001610",
+      "verificationAttempt": 0,
+      "isVerified": false,
+      "isPrimary": true,
+      "ssl": false,
+      "useWWW": false,
+      "type": "free",
+      "newNameReservedAt": null,
+      "newName": null,
+      "__v": 0,
+      "domainId": "fcbf8abe-92b9-4fd8-ab6e-918e4fe104bf",
+      "link": "nodejs-test-84980.siteplus.wtf"
+    }
+  ],
+  "projectTemplate": "9570e92a-e590-4800-a467-3a52758bfa9b",
+  "__v": 0,
+  "ssl": false,
+  "link": "nodejs-test-84980.siteplus.wtf",
+  "screenshotUrlTemplate": "https://image-api-service.siteplus.wtf/projects/a3e417cb-ee20-4d3e-8eea-7c45ffdd3eec"
+}

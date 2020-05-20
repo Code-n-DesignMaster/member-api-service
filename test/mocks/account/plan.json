@@ -1,0 +1,6 @@
+{
+  "maxAllowedProjects": 1500,
+  "maxAllowedSites": 2,
+  "outOfPlanLimit": 1500,
+  "maxFileStorageSpace": 1073741824
+}

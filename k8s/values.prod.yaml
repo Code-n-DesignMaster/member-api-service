@@ -1,0 +1,158 @@
+app:
+  service: member-api-service
+  environment: production
+
+env:
+# Unique values
+  - name: DEBUG
+    value: "app:*"
+  - name: NODE_ENV
+    value: "production"
+  - name: HOST
+    value: "0.0.0.0"
+  - name: PORT
+    value: "8080"
+  - name: LOGGER_SENTRY_ENABLED
+    value: "true"
+
+# Config values
+  - name: LOGGER_SENTRY_DSN
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: LOGGER_SENTRY_DSN
+  - name: COUCHBASE_HOST
+    valueFrom:
+     configMapKeyRef:
+       name: siteplus-platform-config
+       key: COUCHBASE_HOST_EU
+  - name: SITE_HOSTING_UPDATER_URL
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: SITE_HOSTING_UPDATER_URL
+  - name: STATIC_URL
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: STATIC_URL
+  - name: FRONTEND_APP_URL
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: FRONTEND_APP_URL
+  - name: IMAGE_API_SERVICE_URL
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: IMAGE_API_SERVICE_URL
+  - name: TEMPLATE_URL_SUFFIX
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: FREE_DOMAIN_SUFFIX
+  - name: FREE_DOMAIN_SUFFIX
+    valueFrom:
+      configMapKeyRef:
+        name: siteplus-platform-config
+        key: FREE_DOMAIN_SUFFIX
+
+# Secret values
+  - name: MONGODB_HOST
+    valueFrom:
+      secretKeyRef:
+        name: generic-mongodb-secret
+        key: MONGODB_HOST
+  - name: MONGODB_NAME
+    valueFrom:
+      secretKeyRef:
+        name: generic-mongodb-secret
+        key: MONGODB_NAME
+  - name: MONGODB_USER
+    valueFrom:
+      secretKeyRef:
+        name: generic-mongodb-secret
+        key: MONGODB_USER
+  - name: MONGODB_PASS
+    valueFrom:
+      secretKeyRef:
+        name: generic-mongodb-secret
+        key: MONGODB_PASS
+  - name: MEMBER_API_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: MEMBER_API_KEY
+  - name: BLOG_API_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: BLOG_API_KEY
+  - name: SERVICE_API_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: SERVICE_API_KEY
+  - name: SECRET_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: SECRET_KEY
+  - name: CRYPTO_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: CRYPTO_KEY
+  - name: CRYPTO_IV
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: CRYPTO_IV
+  - name: SITE_HOSTING_UPDATER_ACCESS_KEY
+    valueFrom:
+      secretKeyRef:
+        name: siteplus-platform-secrets
+        key: SITE_HOSTING_UPDATER_ACCESS_KEY
+
+tasks:
+  - name: member-api-service
+    component: api
+    replicaCount: 8
+    ports:
+      - name: http
+        servicePort: 80
+        containerPort: 8080
+      - name: 5005-tcp
+        servicePort: 5005
+        containerPort: 8080
+    ingress:
+      hosts:
+        - host: member-api-service.siteplus.com
+          servicePort: 80
+    resources:
+      limits:
+        cpu: 2
+        memory: 4Gi
+      requests:
+        cpu: 50m
+        memory: 64Mi
+    readinessProbe:
+      failureThreshold: 2
+      httpGet:
+        path: /healthz/readiness
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 20
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 10
+    livenessProbe:
+      failureThreshold: 1
+      httpGet:
+        path: /healthz/liveness
+        port: 8080
+        scheme: HTTP
+      initialDelaySeconds: 20
+      periodSeconds: 10
+      successThreshold: 1
+      timeoutSeconds: 10

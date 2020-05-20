@@ -1,0 +1,17 @@
+module.exports = {
+  AndSpecification: require('./AndSpecification'),
+  HasEcommerceLockTypeSpecification: require('./HasEcommerceLockTypeSpecification'),
+  BackToTopAccessableSpecification: require('./BackToTopAccessableSpecification'),
+  OutOfPlanLimitSpecification: require('./OutOfPlanLimitSpecification'),
+  PublishSpecification: require('./PublishSpecification'),
+  FreeDomainSpecification: require('./FreeDomainSpecification'),
+  AvailableStorageSpaceSpecification: require('./AvailableStorageSpaceSpecification'),
+  AvailableFilesPerUserSpecification: require('./AvailableFilesPerUserSpecification'),
+  ShowEcommerceTemplateSpecification: require('./ShowEcommerceTemplateSpecification'),
+  ShowTemplateVersionSpecification: require('./ShowTemplateVersionSpecification'),
+  PausingEcommerceFeatureSpecification: require('./PausingEcommerceFeatureSpecification'),
+  PausedEcommerceFeatureSpecification: require('./PausedEcommerceFeatureSpecification'),
+  ResumingEcommerceFeatureSpecification: require('./ResumingEcommerceFeatureSpecification'),
+  ExpiringPausedEcommerceFeatureSpecification: require('./ExpiringPausedEcommerceFeatureSpecification'),
+  ExpiringActiveEcommerceFeatureSpecification: require('./ExpiringActiveEcommerceFeatureSpecification'),
+}

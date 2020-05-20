@@ -1,0 +1,695 @@
+{
+  "planId": 2,
+  "technicalName": "Siteplus Personal",
+  "marketingName": "Personal",
+  "isSpecial": false,
+  "canUseAddon": true,
+  "description": "Good plan",
+  "productTemplate": {
+    "productTemplateId": 1,
+    "technicalName": "sitebuilder",
+    "marketingName": "sitebuilder"
+  },
+  "periods": [
+    {
+      "periodId": 1,
+      "price": "10.00",
+      "technicalName": "Monthly",
+      "marketingName": "Monthly",
+      "shortName": "mo",
+      "salePromoText": null,
+      "isTrial": false,
+      "discounts": []
+    },
+    {
+      "periodId": 12,
+      "price": "100.00",
+      "technicalName": "Annual",
+      "marketingName": "Annual",
+      "shortName": "yr",
+      "salePromoText": "2 MONTH FOR FREE",
+      "isTrial": false,
+      "discounts": []
+    }
+  ],
+  "features": [
+    {
+      "featureId": 1,
+      "technicalName": "sites",
+      "marketingName": "Sites",
+      "featureValue": "1",
+      "featureMarketingValue": "1",
+      "hidden": false
+    },
+    {
+      "featureId": 2,
+      "technicalName": "projects",
+      "marketingName": "Projects",
+      "featureValue": "1500",
+      "featureMarketingValue": "1500",
+      "hidden": true
+    },
+    {
+      "featureId": 3,
+      "technicalName": "storage",
+      "marketingName": "Storage",
+      "featureValue": "1073741824",
+      "featureMarketingValue": "1073741824",
+      "hidden": false
+    },
+    {
+      "featureId": 4,
+      "technicalName": "pages",
+      "marketingName": "Pages per project",
+      "featureValue": "20",
+      "featureMarketingValue": "20",
+      "hidden": false
+    },
+    {
+      "featureId": 5,
+      "technicalName": "freeDomains",
+      "marketingName": "Free domains",
+      "featureValue": "true",
+      "featureMarketingValue": "true",
+      "hidden": true
+    },
+    {
+      "featureId": 6,
+      "technicalName": "connectDomain",
+      "marketingName": "External domain",
+      "featureValue": "true",
+      "featureMarketingValue": "true",
+      "hidden": false
+    },
+    {
+      "featureId": 7,
+      "technicalName": "analytics",
+      "marketingName": "Analytics",
+      "featureValue": "advanced",
+      "featureMarketingValue": "advanced",
+      "hidden": false
+    },
+    {
+      "featureId": 8,
+      "technicalName": "support",
+      "marketingName": "Premium support",
+      "featureValue": "false",
+      "featureMarketingValue": "false",
+      "hidden": false
+    },
+    {
+      "featureId": 9,
+      "technicalName": "advertisement",
+      "marketingName": "Advertisement",
+      "featureValue": "false",
+      "featureMarketingValue": "false",
+      "hidden": true
+    },
+    {
+      "featureId": 10,
+      "technicalName": "sections",
+      "marketingName": "Sections",
+      "featureValue": "50",
+      "featureMarketingValue": "50",
+      "hidden": true
+    },
+    {
+      "featureId": 11,
+      "technicalName": "enableBlocks",
+      "marketingName": "Enable blocks",
+      "featureValue": "true",
+      "featureMarketingValue": "true",
+      "hidden": true
+    },
+    {
+      "featureId": 12,
+      "technicalName": "enableFeatures",
+      "marketingName": "Enable features",
+      "featureValue": "true",
+      "featureMarketingValue": "true",
+      "hidden": true
+    },
+    {
+      "featureId": 13,
+      "technicalName": "enableMarginals",
+      "marketingName": "Enable marginals",
+      "featureValue": "true",
+      "featureMarketingValue": "true",
+      "hidden": true
+    },
+    {
+      "featureId": 34,
+      "technicalName": "customBlockLimit",
+      "marketingName": "customBlockLimit",
+      "featureValue": "30",
+      "featureMarketingValue": "30",
+      "hidden": true
+    }
+  ],
+  "addons": [
+    {
+      "addonId": 1,
+      "addonTypeId": 1,
+      "technicalName": "1_site",
+      "marketingName": "1 site",
+      "description": "1 site",
+      "value": "1",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "5.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "50.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 3,
+      "addonTypeId": 1,
+      "technicalName": "2_site",
+      "marketingName": "2 site",
+      "description": "2 site",
+      "value": "2",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "10.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "100.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 4,
+      "addonTypeId": 1,
+      "technicalName": "3_site",
+      "marketingName": "3 site",
+      "description": "3 site",
+      "value": "3",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "15.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "150.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 5,
+      "addonTypeId": 1,
+      "technicalName": "4_site",
+      "marketingName": "4 site",
+      "description": "4 site",
+      "value": "4",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "20.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "200.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 6,
+      "addonTypeId": 1,
+      "technicalName": "5_site",
+      "marketingName": "5 site",
+      "description": "5 site",
+      "value": "5",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "25.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "250.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 7,
+      "addonTypeId": 1,
+      "technicalName": "6_site",
+      "marketingName": "6 site",
+      "description": "6 site",
+      "value": "6",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "30.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "300.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 8,
+      "addonTypeId": 1,
+      "technicalName": "7_site",
+      "marketingName": "7 site",
+      "description": "7 site",
+      "value": "7",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "35.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "350.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 9,
+      "addonTypeId": 1,
+      "technicalName": "8_site",
+      "marketingName": "8 site",
+      "description": "8 site",
+      "value": "8",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "40.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "400.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 10,
+      "addonTypeId": 1,
+      "technicalName": "9_site",
+      "marketingName": "9 site",
+      "description": "9 site",
+      "value": "9",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "45.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "450.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 11,
+      "addonTypeId": 1,
+      "technicalName": "10_site",
+      "marketingName": "10 site",
+      "description": "10 site",
+      "value": "10",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "50.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "500.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 2,
+      "addonTypeId": 1,
+      "technicalName": "21-100",
+      "marketingName": "21-100",
+      "description": "21-100",
+      "value": "100",
+      "feature": {
+        "featureId": 4,
+        "featureTypeId": 2,
+        "technicalName": "pages",
+        "marketingName": "Pages per project"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "5.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "50.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 21,
+      "addonTypeId": 1,
+      "technicalName": "101-infinity",
+      "marketingName": "101-infinity",
+      "description": "101-infinity",
+      "value": "1000",
+      "feature": {
+        "featureId": 4,
+        "featureTypeId": 2,
+        "technicalName": "pages",
+        "marketingName": "Pages per project"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "9.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "90.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 24,
+      "addonTypeId": 1,
+      "technicalName": "1 GB",
+      "marketingName": "1 GB",
+      "description": "1 GB",
+      "value": "1073741824",
+      "feature": {
+        "featureId": 3,
+        "featureTypeId": 2,
+        "technicalName": "storage",
+        "marketingName": "Storage"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "5.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "50.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 23,
+      "addonTypeId": 1,
+      "technicalName": "100 MB",
+      "marketingName": "100 MB",
+      "description": "100 MB",
+      "value": "104857600",
+      "feature": {
+        "featureId": 3,
+        "featureTypeId": 2,
+        "technicalName": "storage",
+        "marketingName": "Storage"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "1.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "10.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 25,
+      "addonTypeId": 1,
+      "technicalName": "5 GB",
+      "marketingName": "5 GB",
+      "description": "5 GB",
+      "value": "5368709120",
+      "feature": {
+        "featureId": 3,
+        "featureTypeId": 2,
+        "technicalName": "storage",
+        "marketingName": "Storage"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "9.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "90.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    },
+    {
+      "addonId": 26,
+      "addonTypeId": 1,
+      "technicalName": "0_site",
+      "marketingName": "0 site",
+      "description": "0 site",
+      "value": "0",
+      "feature": {
+        "featureId": 1,
+        "featureTypeId": 1,
+        "technicalName": "sites",
+        "marketingName": "Sites"
+      },
+      "periods": [
+        {
+          "periodId": 1,
+          "price": "0.00",
+          "technicalName": "Monthly",
+          "marketingName": "Monthly",
+          "shortName": "mo",
+          "isTrial": false,
+          "discounts": []
+        },
+        {
+          "periodId": 12,
+          "price": "0.00",
+          "technicalName": "Annual",
+          "marketingName": "Annual",
+          "shortName": "yr",
+          "isTrial": false,
+          "discounts": []
+        }
+      ]
+    }
+  ]
+}

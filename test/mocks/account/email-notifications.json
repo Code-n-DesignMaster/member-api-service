@@ -1,0 +1,32 @@
+{
+ "total": 3,
+ "offset": 0,
+ "limit": 20,
+ "items": [
+  {
+   "id": 148234,
+   "subject": "Order invoice",
+   "status": "Sent",
+   "dateSent": "2018-08-03 07:28:13",
+   "emailFrom": "dev.customercare@siteplus.com",
+   "emailTo": "nodejs.test@siteplus.com"
+  },
+  {
+   "id": 148223,
+   "subject": "Order invoice",
+   "status": "Sent",
+   "dateSent": "2018-08-02 11:31:40",
+   "emailFrom": "dev.customercare@siteplus.com",
+   "emailTo": "nodejs.test@siteplus.com"
+  },
+  {
+   "id": 147988,
+   "subject": "Pending email change",
+   "status": "Sent",
+   "dateSent": "2018-07-30 10:57:59",
+   "emailFrom": "dev.customercare@siteplus.com",
+   "emailTo": "nodejs.test@siteplus.com"
+  }
+ ],
+ "records_type": "EmailLogList"
+}
